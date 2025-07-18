@@ -2,24 +2,49 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VoltonPay - Ваш игровой помощник</title>
+    <!-- Важная строка для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VoltonPay</title>
     <style>
-        /* Основные стили */
-        body {
-            font-family: 'Arial', sans-serif;
+        /* Базовый сброс стилей */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            box-sizing: border-box;
         }
         
-        /* Шапка сайта */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+        
+        /* Шапка */
         header {
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
             color: white;
-            padding: 2rem 0;
+            padding: 2rem 1rem;
             text-align: center;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Контент */
+        .container {
+            padding: 1rem;
+            max-width: 100%;
+        }
+        
+        .feature {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         
         /* Кнопки */
@@ -27,67 +52,68 @@
             display: inline-block;
             background: #4CAF50;
             color: white;
-            padding: 12px 24px;
-            border-radius: 30px;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
             text-decoration: none;
             font-weight: bold;
-            margin: 10px;
-            transition: all 0.3s;
-        }
-        .btn:hover {
-            background: #45a049;
-            transform: scale(1.05);
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            transition: background 0.3s;
         }
         
-        /* Блоки с фичами */
-        .feature {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        .btn:hover {
+            background: #3d8b40;
+        }
+        
+        /* Адаптация для планшетов */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+                margin: 0 auto;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        /* Адаптация для десктопов */
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Шапка с главным заголовком -->
     <header>
-        <h1>🎮 VoltonPay</h1>
-        <p>Ваш надежный помощник в мире игровых платежей</p>
-        <a href="https://t.me/VoltonPay_bot" class="btn">Перейти в бота</a>
+        <h1>VoltonPay</h1>
+        <p>Ваш игровой платежный помощник</p>
+        <a href="https://t.me/VoltonPay_bot" class="btn">Открыть бота</a>
     </header>
-
-    <!-- Основной контент -->
-    <main style="padding: 20px;">
-        <!-- Блок с фичами -->
+    
+    <div class="container">
         <div class="feature">
-            <h2>🔥 Возможности бота</h2>
-            <ul>
-                <li>💸 Мгновенные платежи между игроками</li>
-                <li>🎁 Бонусы за приглашение друзей</li>
-                <li>🛡️ 100% защита транзакций</li>
-                <li>📊 Прозрачная статистика</li>
+            <h2>🚀 Возможности</h2>
+            <ul style="margin-left: 1.5rem;">
+                <li>Мгновенные переводы</li>
+                <li>Бонусы за приглашения</li>
+                <li>Круглосуточная поддержка</li>
             </ul>
         </div>
-
-        <!-- Скриншоты -->
+        
         <div class="feature">
-            <h2>📱 Как это работает</h2>
-            <p>Просто напишите боту и следуйте инструкциям:</p>
-            <!-- Здесь можно добавить реальные скриншоты -->
-            <div style="background: #eee; height: 200px; display: flex; justify-content: center; align-items: center;">
-                <img src="screenshot1.jpg" alt="Интерфейс бота" style="max-width: 300px; border-radius: 10px;">
-            </div>
+            <h2>📱 Как начать?</h2>
+            <ol style="margin-left: 1.5rem;">
+                <li>Нажмите кнопку "Открыть бота"</li>
+                <li>Зарегистрируйтесь за 2 минуты</li>
+                <li>Попробуйте первую транзакцию!</li>
+            </ol>
         </div>
-    </main>
-
-    <!-- Подвал -->
-    <footer style="text-align: center; padding: 20px; background: #333; color: white;">
-        <p>© 2023 VoltonPay. Все права защищены.</p>
-        <a href="https://t.me/VoltonPay_support" style="color: #4CAF50;">Техническая поддержка</a>
+    </div>
+    
+    <footer style="text-align: center; padding: 1.5rem; background: #333; color: white;">
+        <p>© 2023 VoltonPay</p>
     </footer>
-</body>
-</html>.me/VoltonPay_bot" class="btn">Написать боту</a>
 </body>
 </html>
