@@ -1,21 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Мой бот</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltonPay - Ваш игровой помощник</title>
     <style>
-        body { font-family: Arial; text-align: center; padding: 20px; }
-        .btn { 
-            background: #0088cc; 
-            color: white; 
-            padding: 10px 20px; 
-            border-radius: 5px; 
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        /* Шапка сайта */
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        /* Кнопки */
+        .btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
             text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #45a049;
+            transform: scale(1.05);
+        }
+        
+        /* Блоки с фичами */
+        .feature {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-    <h1>Добро пожаловать!</h1>
-    <p>Это сайт моего Telegram-бота</p>
-    <a href="https://t.me/VoltonPay_bot" class="btn">Написать боту</a>
+    <!-- Шапка с главным заголовком -->
+    <header>
+        <h1>🎮 VoltonPay</h1>
+        <p>Ваш надежный помощник в мире игровых платежей</p>
+        <a href="https://t.me/VoltonPay_bot" class="btn">Перейти в бота</a>
+    </header>
+
+    <!-- Основной контент -->
+    <main style="padding: 20px;">
+        <!-- Блок с фичами -->
+        <div class="feature">
+            <h2>🔥 Возможности бота</h2>
+            <ul>
+                <li>💸 Мгновенные платежи между игроками</li>
+                <li>🎁 Бонусы за приглашение друзей</li>
+                <li>🛡️ 100% защита транзакций</li>
+                <li>📊 Прозрачная статистика</li>
+            </ul>
+        </div>
+
+        <!-- Скриншоты -->
+        <div class="feature">
+            <h2>📱 Как это работает</h2>
+            <p>Просто напишите боту и следуйте инструкциям:</p>
+            <!-- Здесь можно добавить реальные скриншоты -->
+            <div style="background: #eee; height: 200px; display: flex; justify-content: center; align-items: center;">
+                <img src="screenshot1.jpg" alt="Интерфейс бота" style="max-width: 300px; border-radius: 10px;">
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer style="text-align: center; padding: 20px; background: #333; color: white;">
+        <p>© 2023 VoltonPay. Все права защищены.</p>
+        <a href="https://t.me/VoltonPay_support" style="color: #4CAF50;">Техническая поддержка</a>
+    </footer>
+</body>
+</html>.me/VoltonPay_bot" class="btn">Написать боту</a>
 </body>
 </html>
